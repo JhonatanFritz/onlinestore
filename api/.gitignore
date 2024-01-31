@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+
+# Dependiendo de tu entorno, puedes necesitar ignorar otros directorios y archivos.
+# Ejemplos adicionales:
+
+# Dependencias locales de npm
+# /node_modules
+
+# Carpeta de construcción
+# /build/
+
+# Logs
+# *.log
+
+# Archivos de configuración
+ .env
