@@ -16,6 +16,16 @@ const productSchema = new mongoose.Schema(
         publicId: { type: String, required: true },
       },
     ],
+    category: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Category",
+      required: true,
+    },
+    subcategory: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Subcategory",
+      required: true,
+    },
   },
   { timestamps: true }
 );

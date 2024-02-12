@@ -54,10 +54,10 @@ const registerAdmin = async (req, res) => {
   }
 };
 
+// ...
+
 const loginAdmin = async (req, res) => {
   try {
-
-   
     const { user, password } = req.body;
     console.log("Credenciales recibidas:", { user, password });
 
@@ -74,16 +74,30 @@ const loginAdmin = async (req, res) => {
       return res.status(401).json({ error: "Invalid credentials" });
     }
 
-    // Generar token JWT
-    const token = jwt.sign({ userId: admin._id }, process.env.JWT_SECRET, {
-      expiresIn: "1h", // Tiempo de expiración del token (1 hora en este caso)
-    });
+    // Incluir más datos del admin en el token
+    const token = jwt.sign(
+      { userId: admin._id, email: admin.email, name: admin.name, lastname: admin.lastname, image: admin.image, user: admin.user },
+      process.env.JWT_SECRET,
+      {
+        expiresIn: "1h", // Tiempo de expiración del token (1 hora en este caso)
+      }
+    );
+
     console.log("Token al Login " + token);
+
+    // Imprimir el contenido del token por consola
+    const decodedToken = jwt.verify(token, process.env.JWT_SECRET);
+    console.log("Contenido del Token Decodificado:", decodedToken);
+
     res.json({ message: "Login successful", admin, token });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Error logging in" });
   }
 };
+
+// ...
+
+
 
 export { registerAdmin, loginAdmin };

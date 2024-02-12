@@ -1,0 +1,11 @@
+/* Estilos para el layout */
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #181924;
+}

@@ -18,7 +18,7 @@ const router = express.Router();
 router.use(authMiddleware);
 
 // Rutas de productos
-router.post('/create', upload.array('images', 5), createProduct);
+router.post('/create', upload.array('images', 5),validate(adminProductRules), createProduct);
 router.patch('/:productId/update', updateProduct);
 router.delete('/:productId/delete', deleteProduct);
 router.get('/', getAllProducts);

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+
+
+.logo {
+  background-color: #22222f;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.logo > p {
+  font-family: "Galada", cursive;
+  font-size: 32px;
+  color: #e2e2e4;
+  line-height: 100%;
+}
+.sidebar {
+  width: 256px; 
+  max-width: 20%;
+  background-color: #2A2B36;
+  color: #e2e2e4;
+}
+
+.sidebarContent {
+  padding: 20px;
+  text-align: center;
+}
+.userData{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 20px;
+}
+.imgContainer {
+  position: relative;
+  width: 120px;
+}
+.userImage {
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #a8c9cb;
+  border-width: 5px;
+}
+.userType {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #157c31; /* Fondo blanco semitransparente */
+  padding: 4px 8px; /* Ajusta según tus necesidades */
+  font-size: 11px; /* Ajusta según tus necesidades */
+  font-weight: 500;
+  border-radius: 8px;
+
+}
+.userEmail{
+  font-size: 11px;
+  font-style: italic;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0px 10px;
+}
+
+.sidebar li {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.sidebar li:hover{
+background-color: #353640;
+}
+
+.sidebar a {
+  color: #e2e2e4;
+  text-decoration: none;
+}
+.closeSessionBtn{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  background-color: transparent;
+  border-style: none;
+  color: #e4e3e2;
+  cursor: pointer;
+}
+.closeSessionBtn:hover{
+  background-color: #C55454;
+}

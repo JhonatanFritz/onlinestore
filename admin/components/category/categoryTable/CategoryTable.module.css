@@ -1,0 +1,58 @@
+/* styles.module.css */
+
+/* Estilo para la tabla */
+.miTablaClaseCSS {
+  width: 90%;
+  max-width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+/* Estilo para las celdas del encabezado */
+.miTablaClaseCSS th {
+  background-color: #2a0359;
+  border: 1px solid #dddddd;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Estilo para las celdas del cuerpo */
+.miTablaClaseCSS td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+}
+
+/* Estilo para filas alternas */
+.miTablaClaseCSS tbody tr:nth-child(even) {
+  /* background-color: #f9f9f9; */
+}
+
+/* Estilo para las celdas al pasar el ratón sobre una fila */
+.miTablaClaseCSS tbody tr:hover {
+  background-color: #698592;
+}
+
+.btnActionsCategory {
+  width: auto;
+  display: flex;
+  gap: 10px;
+}
+.btnActionsCategory > button {
+  padding: 4px 8px;
+  border: none;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+.editCategoryBtn {
+  background-color: #35954d;
+}
+.deleteCategoryBtn {
+  background-color: #bc4054;
+}
+.editCategoryBtn:hover {
+  background-color: #5dba74;
+}
+.deleteCategoryBtn:hover {
+  background-color: #d4687a;
+}

@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Galada&display=swap");
+
+.loginContainer {
+  display: flex;
+  height: 100vh;
+}
+.loginTitle {
+}
+
+.loginContainer main {
+  /* width: 500px;  */
+  width: 30%;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  color: #22222f;
+}
+.loginTitle span {
+  font-family: "Galada", cursive;
+  font-size: 42px;
+}
+.loginHead {
+  font-size: 28px;
+  font-weight: 800;
+}
+.loginForm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.loginForm label {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.loginForm input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+
+  font-size: 14px;
+  border: 2px solid #cbcbcb;
+}
+.loginForm input:focus {
+  border-color: #857dcc;
+  border-width: 2px;
+  /* Cambia el color del borde a rojo */
+  outline: none; /* Elimina el contorno predeterminado */
+  /* Otros estilos que desees aplicar cuando el input está enfocado */
+}
+.loginBtn {
+  padding: 15px 20px;
+
+  color: #fcfcfc;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  background-color: #22222f;
+  border: 1px solid #22222f;
+  border-radius: 5px;
+}
+.loginBtn:hover {
+  background-color: #4f5d73;
+  border-color: #4f5d73;
+  cursor: pointer;
+}
+.loginPresentation {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #22222f;
+}
+.loginMainText{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginMainText > span{
+  font-size: 32px;
+}
+.loginMainText > h1{
+  font-family: "Galada", cursive;
+  font-size: 100px;
+}
+.loginMainImage{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 100px;
+}
+.loginMainImage > img{
+  width: 600px;
+  
+}

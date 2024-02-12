@@ -1,0 +1,38 @@
+/* Añade tus estilos aquí */
+.categoryForm {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categoryForm label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categoryForm input,
+.categoryForm textarea {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.categoryForm button {
+  width: 50%;
+  padding: 15px 20px;
+  background-color: #295367;
+
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #cbcbcb;
+
+  cursor: pointer;
+}
+
+.categoryForm button:hover {
+  background-color: #417c98;
+}

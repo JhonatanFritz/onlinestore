@@ -1,0 +1,38 @@
+.mainContainerCategory {
+    width: 100%;
+    height: 100%;
+    
+    overflow-y: hidden;
+  }
+  
+  .dataContainer {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    gap: 10px;
+
+    overflow-y: hidden;
+  }
+  
+  .categoryContainerSide,
+  .subCategoryContainerSide {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: start;
+    overflow-y: auto; /* Aplicar overflow-y: scroll solo a estos contenedores */
+  }
+  .subCategoryContainerSide {
+    padding-bottom: 50px;
+  }
+  
+  .divider {
+    width: 2px;
+    height: 80vh;
+    background-color: #295367;
+  }
+  

@@ -17,19 +17,10 @@ const adminProductRules = [
     .notEmpty().withMessage('Product stock is required')
     .isInt({ min: 0 }).withMessage('Product stock must be a non-negative integer'),
 
-  body('isAvailableForDelivery')
-    .isBoolean().withMessage('isAvailableForDelivery must be a boolean'),
-
-  body('isOffer')
-    .isBoolean().withMessage('isOffer must be a boolean'),
-
   body('offerPrice')
     .if(body('isOffer').equals(true))
     .notEmpty().withMessage('Offer price is required when the product is on offer')
     .isNumeric().withMessage('Offer price must be a number when the product is on offer'),
-
-  body('images')
-    .isArray({ max: 5 }).withMessage('Up to 5 images are allowed for a product'),
 ];
 
 export { adminProductRules };
